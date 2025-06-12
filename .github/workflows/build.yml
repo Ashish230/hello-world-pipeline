@@ -2,6 +2,9 @@ name: C Build Pipeline
 on:
  push:
    branches: [ main ]
+   paths: 
+       - 'Hi.c'
+workflow_dispatch:
 jobs:
  build:
    runs-on: ubuntu-latest
