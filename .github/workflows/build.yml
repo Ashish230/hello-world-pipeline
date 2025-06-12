@@ -18,7 +18,12 @@ jobs:
        run: gcc hello.c -o hello
      - name: Run the binary
        run: ./hello
-       
+
+     - name: Test the output
+       run: |
+         echo"Running test..."
+         ./hello | grep "Hello"
+         
      - name: Upload artifact:hello
        uses: actions/upload-artifact@v4
        with:
