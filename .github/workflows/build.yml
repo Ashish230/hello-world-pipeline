@@ -1,13 +1,11 @@
 name: C Build Pipeline
 on:
-  push:
+ push:
    branches:
-    -main
-   paths: 
-    - '**.c'
-
-  workflow_dispatch:
-
+     - main
+   paths:
+     - '**.c'
+ workflow_dispatch:
 jobs:
  build:
    runs-on: ubuntu-latest
