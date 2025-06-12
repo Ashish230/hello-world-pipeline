@@ -12,21 +12,25 @@ jobs:
    steps:
      - name: Checkout code
        uses: actions/checkout@v3
+
      - name: Install GCC
        run: sudo apt-get install build-essential -y
+
      - name: Compile hello.c
        run: gcc hello.c -o hello
-     - name: Run the binary
-       run: ./hello
+
      - name: Check files in directory
        run: ls -la
-       
+
+     - name: Run the program
+       run: ./hello
+
      - name: Test the output
        run: |
-         echo"Running test..."
+         echo "Testing hello output..."
          chmod +x ./hello
-         ./hello
-         
+         ./hello | grep "Hello"
+
      - name: Upload artifact:hello
        uses: actions/upload-artifact@v4
        with:
