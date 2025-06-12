@@ -20,7 +20,7 @@ jobs:
        run: ./hello
        
      - name: Upload artifact:hello
-       uses: actions/upload-artifact@v3
+       uses: actions/upload-artifact@v4
        with:
          name: hello-binary
          path: ./hello
