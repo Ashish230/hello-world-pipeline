@@ -18,7 +18,9 @@ jobs:
        run: gcc hello.c -o hello
      - name: Run the binary
        run: ./hello
-
+     - name: Check files in directory
+       run: ls -la
+       
      - name: Test the output
        run: |
          echo"Running test..."
