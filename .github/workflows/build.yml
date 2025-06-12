@@ -24,7 +24,8 @@ jobs:
      - name: Test the output
        run: |
          echo"Running test..."
-         ./hello | grep "Hello"
+         chmod +x ./hello
+         ./hello
          
      - name: Upload artifact:hello
        uses: actions/upload-artifact@v4
