@@ -7,6 +7,6 @@
 #include<stdio.h>
 int main()
 {
-  printf("Hello,CI/CD!\n");
+  printf("Hi,CI/CD!\n");
   return 0;
 }
