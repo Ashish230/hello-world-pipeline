@@ -4,7 +4,7 @@ on:
    branches:
     -main
    paths: 
-    - 'hello.c'
+    - '**.c'
 
   workflow_dispatch:
 
